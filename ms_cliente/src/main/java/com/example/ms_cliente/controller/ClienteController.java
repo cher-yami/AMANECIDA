@@ -1,12 +1,12 @@
-package com.example.ms.cliente.controller;
+package com.example.ms_cliente.controller;
 
-import java.util.List;
 
+import com.example.ms_cliente.dto.ClienteDTO;
+import com.example.ms_cliente.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.ms.cliente.dto.ClienteDTO;
-import com.example.ms.cliente.service.ClienteService;
+import java.util.List;
 
 @RestController
 @RequestMapping("/clientes")
@@ -20,25 +20,24 @@ public class ClienteController {
         return service.findAll();
     }
 
-    @GetMapping("/{
-id}")
+    @GetMapping("/{ id}")
     public ClienteDTO getById(@PathVariable("id") Long id) {
+
         return service.findById(id);
     }
 
     @PostMapping
     public ClienteDTO create(@RequestBody ClienteDTO dto) {
+
         return service.create(dto);
     }
 
-    @PutMapping("/{
-id}")
+    @PutMapping("/{id}")
     public ClienteDTO update(@PathVariable("id") Long id, @RequestBody ClienteDTO dto) {
         return service.update(id, dto);
     }
 
-    @DeleteMapping("/{
-id}")
+    @DeleteMapping("/{id}")
     public void delete(@PathVariable("id") Long id) {
         service.delete(id);
     }

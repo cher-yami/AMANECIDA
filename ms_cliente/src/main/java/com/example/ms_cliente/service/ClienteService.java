@@ -1,7 +1,9 @@
 package com.example.ms_cliente.service;
 
+import com.example.ms_cliente.dto.ClienteDTO;
+
 import java.util.List;
-import com.example.ms.cliente.dto.ClienteDTO;
+
 
 public interface ClienteService {
     List<ClienteDTO> findAll();

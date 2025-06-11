@@ -1,7 +1,8 @@
 package com.example.ms_cliente.util;
 
-import com.example.ms.cliente.entity.Cliente;
-import com.example.ms.cliente.dto.ClienteDTO;
+
+import com.example.ms_cliente.dto.ClienteDTO;
+import com.example.ms_cliente.entity.Cliente;
 
 public class ClienteMapper {
 

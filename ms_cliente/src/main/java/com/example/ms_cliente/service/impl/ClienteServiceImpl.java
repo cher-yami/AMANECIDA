@@ -3,14 +3,14 @@ package com.example.ms_cliente.service.impl;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.example.ms_cliente.dto.ClienteDTO;
+import com.example.ms_cliente.entity.Cliente;
+import com.example.ms_cliente.repository.ClienteRepository;
+import com.example.ms_cliente.service.ClienteService;
+import com.example.ms_cliente.util.ClienteMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.ms.cliente.entity.Cliente;
-import com.example.ms.cliente.dto.ClienteDTO;
-import com.example.ms.cliente.repository.ClienteRepository;
-import com.example.ms.cliente.service.ClienteService;
-import com.example.ms.cliente.util.ClienteMapper;
 
 @Service
 public class ClienteServiceImpl implements ClienteService {
