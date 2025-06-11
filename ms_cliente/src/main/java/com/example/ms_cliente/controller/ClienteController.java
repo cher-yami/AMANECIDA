@@ -20,7 +20,7 @@ public class ClienteController {
         return service.findAll();
     }
 
-    @GetMapping("/{ id}")
+    @GetMapping("/{id}")
     public ClienteDTO getById(@PathVariable("id") Long id) {
 
         return service.findById(id);
