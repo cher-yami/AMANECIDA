@@ -28,7 +28,7 @@ spring:
           filters:
             - AuthFilter
 
-        - id: ms-cliente-service
+        - id: ms-cliente
           uri: lb://ms-cliente
           predicates:
             - Path=/clientes/**
